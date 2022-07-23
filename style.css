@@ -41,13 +41,44 @@ a {
   color: #B22222;
   text-decoration: none; /* No underlining */
 }
-a:hover {
-  color: #8B0000;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
 a:visited { /* visited link */
   color: #8B0000;
 }
+a:hover,
+a:focus {
+  color: #8B0000;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
 a:active { /* selected link */
   color: #CD5C5C;
+}
+.button {
+  display: inline-block;
+  background-color: #F8F8FF;
+  color: #000000;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #8B0000;
+  transition: 0.2s opacity;
+}
+.button:active {
+color: #CD5C5C;
+}
+.button:hover {
+  opacity: 0.8;
+  text-delcoration:none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #F8F8FF
+  text-transform:uppercase;
+  border:2px solid #F8F8FF
+}
+.button.contact:active {
+color: #CD5C5C;
+}
+.button.contact:hover {
+  opacity: 0.8;
+  text-delcoration:none;
 }
