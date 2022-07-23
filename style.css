@@ -1,6 +1,6 @@
 /*
 Colors ued:
-Primary color GhostWhite : #F8F8FF
+Primary color lightgray: #D3D3D3
 Secondary Color Dark Red : 8B0000
 Secondary Color Fire Brick: B22222
 Secondary Color Black : #000000
@@ -54,7 +54,7 @@ a:active { /* selected link */
 }
 .button {
   display: inline-block;
-  background-color: #F8F8FF;
+  background-color: #D3D3D3;
   color: #000000;
   font-weight: 400;
   padding: 10px;
@@ -73,7 +73,7 @@ color: #CD5C5C;
   background-color: transparent;
   color: #F8F8FF
   text-transform:uppercase;
-  border:2px solid #F8F8FF
+  border:2px solid #D3D3D3
 }
 .button.contact:active {
 color: #CD5C5C;
