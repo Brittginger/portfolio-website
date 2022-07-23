@@ -41,12 +41,12 @@ a {
   color: #B22222;
   text-decoration: none; /* No underlining */
 }
+a:hover {
+  color: #8B0000;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
 a:visited { /* visited link */
   color: #8B0000;
-}
-a:hover {
-    color: #8B0000;
-    text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
   color: #CD5C5C;
