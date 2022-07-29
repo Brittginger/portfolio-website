@@ -11,6 +11,15 @@ secondary color black : #000000
   box-sizing:border-box;
 }
 header {
+  background-color: #B0C4DE;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow:-10px 8px 13px 0px rgba(50, 50, 50, 0.88);
+  width: 100%;
+}
+main {
+  padding-top: 133px;
 }
 body {
   background-color: #E0FFFF;
@@ -92,4 +101,49 @@ color: #00008B;
 /* Layout styling */
 .container{
   padding: 0 15px;
+}
+#work .row {
+  margin:25px 0; /* 25 px top and bottom, 0 left and right*/
+  border-bottom: 1px solid;
+  padding: 25px;
+}
+#hero h1 {
+  text-align: center; /*Centers text */
+}
+#hero {
+  background-color: #B0C4DE;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+.logo {
+  max-width:250px;
+}
+nav>ul{
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+nav>ul>li {
+  display: inline-block;
+}
+nav> ul> li> a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F8F8FF
+}
+nav> ul> li> a:active {
+  color: #00008B;
+}
+nav> ul> li> a:visited {
+  font-weight: 500;
+  color: #708090;
+}
+nav> ul> li> a:hover {
+  background-color: #B0C4DE;
+  color:#00008B;
+}
+#hero {
+  background-color: #B0C4DE
 }
