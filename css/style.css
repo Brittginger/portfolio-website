@@ -74,19 +74,17 @@ a:active { /* selected link */
   background-color: #B0C4DE;
   color: #0000FF;
   font-weight: 500;
-  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #00CED1;
-  transition-duration:0.2s;
-  transition-property:opacity;
-}
-.button:hover {
-  cursor: pointer;
-  opacity: 0.8;
+  transition: 0.2s opacity;
 }
 .button:active {
 color: #00008B;
+}
+.button:hover {
+  opacity: 0.8;
+  text-delcoration:none;
 }
 .button.contact {
   background-color: transparent;
@@ -183,6 +181,11 @@ header {
     display: table;
   }
 }
+.about picture {
+  width: 100%;
+  max-width: 100%;
+  height:auto;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -192,4 +195,26 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.sun {
+animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
