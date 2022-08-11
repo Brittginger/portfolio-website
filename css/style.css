@@ -102,6 +102,10 @@ color: #00008B;
 /* Layout styling */
 .container{
   padding: 0 15px;
+  text-align: center;
+}
+#behance {
+  margin-top: 15px;
 }
 #work .row {
   margin:25px 0; /* 25 px top and bottom, 0 left and right*/
@@ -119,6 +123,13 @@ color: #00008B;
 }
 .logo {
   max-width:250px;
+}
+.profilepic {
+  margin:auto;
+  display: block;
+  padding-top: 25px;
+  height:500px;
+  width:500px;
 }
 nav>ul{
   display: inline-block;
@@ -191,11 +202,24 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
+.col-md-7 {
+  width: 60%;
+}
+.col-lg-5 {
+  width: 40%;
+}
+.container {
+  max width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
