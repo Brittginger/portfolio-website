@@ -12,14 +12,13 @@ secondary color black : #000000
 }
 header {
   background-color: #B0C4DE;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   box-shadow:-10px 8px 13px 0px rgba(50, 50, 50, 0.88);
   width: 100%;
 }
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 body {
   background-color: #E0FFFF;
@@ -100,10 +99,15 @@ color: #00008B;
     color:#00008B;
 }
 /* Layout styling */
+.logo{
+  font-size: 30px;
+  font-family: 'alice', sans-serif;
+  border-bottom: 2px solid #00CED1;
+}
 .container{
   padding: 0 15px;
-  text-align: center;
 }
+
 #behance {
   margin-top: 15px;
 }
@@ -131,13 +135,26 @@ color: #00008B;
   height:500px;
   width:500px;
 }
+.navtoggle li:not(:last-child) {
+display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 27px;
+  padding-right:0;
+}
+.navtoggle.resposive li {
+  display: block;
+}
 nav>ul{
-  display: inline-block;
   list-style-type: none;
   padding: 0;
-}
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 nav> ul> li> a {
   padding: 0 15px;
@@ -179,10 +196,22 @@ header {
   body {
     font-size: 18px
   }
+  nav > ul {
+  margin: 1em 0;
+}
+nav>ul>li {
+  display: inline-block;
+}
   [class*= "col-"] {
     float: left;
     padding: 10px;
   }
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   .col-md-6 {
     width: 50%
   }
@@ -191,11 +220,11 @@ header {
     clear:both;
     display: table;
   }
-}
 .about picture {
   width: 100%;
   max-width: 100%;
   height:auto;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
