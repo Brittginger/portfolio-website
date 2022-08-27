@@ -148,8 +148,16 @@ display: none;
   font-size: 27px;
   padding-right:0;
 }
-.navtoggle.resposive li {
+.navtoggle.resposive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
   display: block;
+  padding:10px 0;
+  border-top: 1px solid:#00CED1;
+}
+.navtoggle.resposive li:last-child {
+  padding: 0 0 10px;
 }
 nav>ul{
   list-style-type: none;
