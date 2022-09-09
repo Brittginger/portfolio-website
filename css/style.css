@@ -155,7 +155,7 @@ display: none;
   display: block;
   padding:10px 0;
   border-top: 1px solid:#00CED1;
-}
+} 
 .navtoggle.resposive li:last-child {
   padding: 0 0 10px;
 }
